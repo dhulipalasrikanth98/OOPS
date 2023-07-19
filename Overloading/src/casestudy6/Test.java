@@ -13,7 +13,8 @@ public class Test {
         test.m1(new Animal());
         test.m1(new Monkey());
         Animal a1 = new Monkey();
-        test.m1(a1);
+        test.m1(a1);//in method overloading method resolution is based on the parent reference even if has child reference
+        //method resolution means which overloaded method to take compiler will decide
     }
 }
 class Animal{
